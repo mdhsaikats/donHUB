@@ -65,3 +65,19 @@ footer {
     color: white;
     margin-top: 20px;
 }
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .content-container, .blood-request-container, .donors-list-container {
+        width: 90%;
+        padding: 15px;
+    }
+}
