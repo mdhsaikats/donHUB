@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation - Request Blood</title>
+    <link rel="stylesheet" href="blood_styles.css">
+</head>
+<body>
+    <header>
+        <h1>Blood Donation</h1>
+        <p>Every Drop Matters</p>
+    </header>
+
+    <nav>
+        <a href="index.html"><b>Home</b></a>
+        <a href="blood_donation.html"><b>Blood Donation</b></a>
+        <a href="#listings"><b>Category</b></a>
+        <a href="about.html"><b>About</b></a>
+        <a href="contact.html"><b>Contact</b></a>
+    </nav>
+
+    <!-- Blood Request Section -->
+    <div class="blood-request-container">
+        <h2>Need Blood?</h2>
+        <p>If you or someone you know is in urgent need of blood, please fill out the request form below. We'll show you available donors in your area.</p>
+        
+        <form id="bloodRequestForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="blood-type">Blood Type Needed:</label>
+            <select id="blood-type" name="blood-type" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <label for="location">Location (City/Area):</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="urgent">Urgency Level:</label>
+            <select id="urgent" name="urgent" required>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+
+    <!-- Section to display donors -->
+    <div id="donors-list" class="donors-list-container">
+        <!-- Donors will be displayed here -->
+    </div>
+
+    <div class="content-container">
+        <h2>About Blood Donation</h2>
+        <p>Blood donation is one of the most selfless acts you can do to save lives. Every year, millions of people around the world rely on blood donations to survive medical emergencies and chronic conditions. Whether you donate to save a loved one or someone you've never met, your donation makes an incredible impact.</p>
+        <p>Your blood can make a huge difference. Take a step to help others and donate today!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 DonateHub. All rights reserved to MORKHUB.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
