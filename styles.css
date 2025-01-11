@@ -4,43 +4,58 @@ body {
     padding: 0;
     background-color: #f9f9f9;
 }
+
 header {
-
-
-    background-image:url('header_index.png');
+    background-image: url('header_index.png');
     background-blend-mode: color;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-size: x-large;
-    width: 100%;
-    height: 20vh;
+    font-size: 3vw; /* Use viewport width for responsive font-size */
     color: rgb(0, 0, 0);
-    padding: 10px 20px;
+    padding: 20px; /* Increase padding for better spacing */
     text-align: center;
+    box-sizing: border-box; /* Ensure padding doesn't affect the header size */
 }
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* Navbar styling */
 nav {
     display: flex;
     justify-content: center;
     background-color: #ce0808;
     padding: 10px;
 }
+
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
 }
+
 nav a:hover {
     text-decoration: underline;
 }
+
 .container {
     padding: 20px;
 }
+
 .donation-listing {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
+
 .donation-item {
     background-color: white;
     border: 1px solid #ddd;
@@ -48,16 +63,20 @@ nav a:hover {
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .donation-item img {
     width: 100%;
     border-radius: 8px;
 }
+
 .donation-item h3 {
     margin: 10px 0;
 }
+
 .donation-item p {
     color: #555;
 }
+
 footer {
     text-align: center;
     padding: 15px;
@@ -65,6 +84,7 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     nav {
@@ -79,5 +99,10 @@ footer {
     .content-container, .blood-request-container, .donors-list-container {
         width: 90%;
         padding: 15px;
+    }
+
+    /* Adjust header font-size for mobile */
+    header {
+        font-size: 5vw; /* Adjust based on your preference */
     }
 }
