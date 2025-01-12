@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="listing.css">
+    <title>Donation Listing</title>
+</head>
+<body>
+
+<header>
+    <h1><b>Add Your Donation</b></h1>
+    <p>Connecting donors with those in need</p>
+</header>
+
+<nav>
+    <a href="index.html"><b>Home</b></a>
+    <a href="blood_donation.html"><b>Blood Donation</b></a>
+    <a href="#listings"><b>Category</b></a>
+    <a href="listing.html"><b>Listing</b></a>
+    <a href="about.html"><b>About</b></a>
+    <a href="contact.html"><b>Contact</b></a>
+</nav>
+
+<main>
+    <section class="donation-form">
+        <h2>Upload Your Donation</h2>
+        <form id="donationForm">
+            <label for="title">Donation Title:</label>
+            <input type="text" id="title" name="title" required placeholder="Enter the title">
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required placeholder="Enter a brief description"></textarea>
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <button type="submit">Add Donation</button>
+        </form>
+    </section>
+
+    <section id="listings" class="donation-listings">
+        <h2>Donation Listings</h2>
+        <div id="donationContainer">
+            <!-- Donation blocks will be dynamically added here -->
+        </div>
+    </section>
+</main>
+
+<script src="listing.js"></script>
+</body>
+</html>
