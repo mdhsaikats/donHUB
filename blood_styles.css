@@ -138,61 +138,42 @@ nav a:hover {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    font-family: Arial, sans-serif;
 }
 
 .blood-coll-container h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.blood-coll-container p {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .blood-coll-container form {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .blood-coll-container label {
     font-size: 1.1em;
     margin-bottom: 5px;
-    display: inline-block;
-    width: 200px; /* Fixed width for labels */
 }
 
-.blood-coll-container input[type="text"], 
-.blood-coll-container input[type="number"], 
-.blood-coll-container input[type="email"], 
-.blood-coll-container select {
+.blood-coll-container input, .blood-coll-container select {
     padding: 10px;
     font-size: 1.1em;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-bottom: 15px;
-    width: calc(100% - 220px); /* Adjust input width to fit */
-    display: inline-block; /* Ensure inline display with label */
+    margin-bottom: 10px;
 }
 
 .blood-coll-container input[type="radio"] {
     margin-right: 10px;
-}
-
-.blood-coll-container input[type="text"]:disabled,
-.blood-coll-container input[type="email"]:disabled,
-.blood-coll-container input[type="number"]:disabled,
-.blood-coll-container select:disabled {
-    background-color: #f2f2f2;
-}
-
-.blood-coll-container .form-group {
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-}
-
-.blood-coll-container .form-group input[type="text"] {
-    flex-grow: 1; /* Make the input fields grow to fill available space */
-}
-
-.blood-coll-container .form-group input[type="radio"] {
-    margin-right: 5px;
 }
 
 .blood-coll-container button {
@@ -205,12 +186,32 @@ nav a:hover {
     cursor: pointer;
     width: 100%;
     margin-top: 20px;
+    text-align: center;
 }
 
 .blood-coll-container button:hover {
     background-color: #900202;
 }
 
+.blood-coll-container .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.blood-coll-container .form-group input[type="radio"] {
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .blood-coll-container {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .blood-coll-container form {
+        gap: 10px;
+    }
+}
 
 
 /* Footer styling */
