@@ -61,6 +61,142 @@
         <!-- Donors will be displayed here -->
     </div>
 
+    <div class="blood-coll-container">
+        <h2>Want to Donate Blood?</h2>
+        <p>If you willingly want to donate your blood for someone in need</p>
+    
+        <form id="blood-donation">
+            <!-- Full Name -->
+            <div>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+    
+            <!-- Date of Birth -->
+            <div>
+                <label for="dateofbirth">Date of Birth:</label>
+                <input type="text" id="dateofbirth" name="dateofbirth" required>
+            </div>
+    
+            <!-- Gender -->
+            <div>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+    
+            <!-- Contact Number -->
+            <div>
+                <label for="contact">Contact Number:</label>
+                <input type="text" id="contact" name="contact" required>
+            </div>
+    
+            <!-- Email Address -->
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <!-- Address -->
+            <div>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+    
+            <!-- Weight (kg) -->
+            <div>
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+            </div>
+    
+            <!-- Blood Group -->
+            <div>
+                <label for="blood-group">Blood Group (if known):</label>
+                <input type="text" id="blood-group" name="blood-group">
+            </div>
+    
+            <!-- Recent Illness -->
+            <div>
+                <label>Recent Illness (last 4 weeks):</label>
+                <label for="illness-yes">Yes</label>
+                <input type="radio" id="illness-yes" name="recent-illness" value="yes">
+                <label for="illness-no">No</label>
+                <input type="radio" id="illness-no" name="recent-illness" value="no">
+                <input type="text" name="illness-specify" placeholder="If Yes, please specify">
+            </div>
+    
+            <!-- Chronic Medical Conditions -->
+            <div>
+                <label>Do you have any chronic medical conditions?</label>
+                <label for="chronic-yes">Yes</label>
+                <input type="radio" id="chronic-yes" name="chronic-condition" value="yes">
+                <label for="chronic-no">No</label>
+                <input type="radio" id="chronic-no" name="chronic-condition" value="no">
+                <input type="text" name="chronic-specify" placeholder="If Yes, please specify">
+            </div>
+    
+            <!-- Medications -->
+            <div>
+                <label>Are you currently on any medications?</label>
+                <label for="meds-yes">Yes</label>
+                <input type="radio" id="meds-yes" name="medications" value="yes">
+                <label for="meds-no">No</label>
+                <input type="radio" id="meds-no" name="medications" value="no">
+                <input type="text" name="meds-specify" placeholder="If Yes, please specify">
+            </div>
+    
+            <!-- Travel History -->
+            <div>
+                <label>Have you traveled outside the country in the last 12 months?</label>
+                <label for="travel-yes">Yes</label>
+                <input type="radio" id="travel-yes" name="travel-history" value="yes">
+                <label for="travel-no">No</label>
+                <input type="radio" id="travel-no" name="travel-history" value="no">
+                <input type="text" name="travel-specify" placeholder="If Yes, please specify where">
+            </div>
+    
+            <!-- Recent Vaccination -->
+            <div>
+                <label>Recent Vaccination (last 8 weeks):</label>
+                <label for="vaccination-yes">Yes</label>
+                <input type="radio" id="vaccination-yes" name="vaccination" value="yes">
+                <label for="vaccination-no">No</label>
+                <input type="radio" id="vaccination-no" name="vaccination" value="no">
+            </div>
+    
+            <!-- Smoking and Alcohol -->
+            <div>
+                <label>Do you smoke or consume alcohol regularly?</label>
+                <label for="smoke-yes">Yes</label>
+                <input type="radio" id="smoke-yes" name="smoke-alcohol" value="yes">
+                <label for="smoke-no">No</label>
+                <input type="radio" id="smoke-no" name="smoke-alcohol" value="no">
+            </div>
+    
+            <!-- Tattoos or Piercings -->
+            <div>
+                <label>Have you had any tattoos or piercings in the last 6 months?</label>
+                <label for="tattoos-yes">Yes</label>
+                <input type="radio" id="tattoos-yes" name="tattoos-piercings" value="yes">
+                <label for="tattoos-no">No</label>
+                <input type="radio" id="tattoos-no" name="tattoos-piercings" value="no">
+            </div>
+    
+            <!-- Blood Donation History -->
+            <div>
+                <label>Have you donated blood before?</label>
+                <label for="donation-yes">Yes</label>
+                <input type="radio" id="donation-yes" name="blood-donation-history" value="yes">
+                <label for="donation-no">No</label>
+                <input type="radio" id="donation-no" name="blood-donation-history" value="no">
+                <input type="text" name="last-donation" placeholder="If Yes, when was your last donation?">
+            </div>
+        </form>
+    </div>
+    
+
     <div class="content-container">
         <h2>About Blood Donation</h2>
         <p>Blood donation is one of the most selfless acts you can do to save lives. Every year, millions of people around the world rely on blood donations to survive medical emergencies and chronic conditions. Whether you donate to save a loved one or someone you've never met, your donation makes an incredible impact.</p>
